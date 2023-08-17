@@ -1,0 +1,13 @@
+---
+const {img, legend, bg} = Astro.props
+---
+<section class="hero m-4">
+  <div class=`row border border-5 border-${bg} bg-dark`>
+    <div class="col-md-6">
+      <img class="img-fluid" src={img} alt="">
+    </div>
+    <div class=`col-md-6 bg-${bg} text-white d-flex align-items-center p-4`>
+      <h3>{legend}</h3>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,29 @@
+---
+import MainLayout from "./MainLayout.astro";
+const info = Astro.props.frontmatter
+const {name, photo, email, phone} = info
+---
+
+<MainLayout title="Contact">
+  <article class="card card-contact my-4 mx-auto text-center">
+    <div class="card-header">
+      <img class="img-fluid contact-img" src={photo}>
+    </div>
+    <div class="card-body">
+      <h3>{name}</h3>
+      <p>Correo: {email}</p>
+      <p>Teléfono: {phone}</p>
+    </div>
+  </article>
+</MainLayout>
+
+<style>
+  .card-contact {
+    width: 500px;
+  }
+  .contact-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+</style>

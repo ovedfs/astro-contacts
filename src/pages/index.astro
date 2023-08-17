@@ -1,0 +1,39 @@
+---
+import Hero from "../components/Hero.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+const img = "/images/hero01.jpg"
+const legend = "Lorem ipsum dolor sit amet consectetur adipisicing elit. A, voluptate?"
+const bg = 'info'
+---
+
+<MainLayout title="Home">
+	<Hero {img} {legend} {bg} />
+	
+	<div class="row">
+		<div class="col-md-4">
+			<div class="border rounded bg-success text-white p-4 mb-4">
+				<h3>Lorem ipsum dolor sit amet.</h3>
+				<p>
+					<i class="fa-solid fa-user-tie fa-2xl"></i>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ut perspiciatis eius maxime, optio autem? Totam provident eaque expedita unde?</p>	
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="border rounded bg-warning text-white p-4 mb-4">
+				<h3>Lorem ipsum dolor sit amet.</h3>
+				<p>
+					<i class="fa-solid fa-user-tie fa-2xl"></i>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ut perspiciatis eius maxime, optio autem? Totam provident eaque expedita unde?</p>	
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="border rounded bg-danger text-white p-4 mb-4">
+				<h3>Lorem ipsum dolor sit amet.</h3>
+				<p>
+					<i class="fa-solid fa-user-tie fa-2xl"></i>
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ut perspiciatis eius maxime, optio autem? Totam provident eaque expedita unde?</p>	
+			</div>
+		</div>
+	</div>
+	
+</MainLayout>
